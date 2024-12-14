@@ -1,0 +1,981 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding-top: 100px; /* Avoid negative padding */
+    font-family: Arial, sans-serif;
+}
+
+.logoImg{
+        margin-top: -10px;
+        height: 100px;
+        width: 100px;
+        justify-self: center;
+        margin-left: 100px;
+    }
+
+a.navnames {
+    text-decoration: none; /* Ensure Bootstrap doesn't override */
+    color: #29312c ;
+    font-weight: 750;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sec1, .sec2, .sec3, .sec5 {
+    padding-top: 2px;
+}
+
+.sec1 {
+    margin-left: 15px;
+}
+
+.sec2 {
+    padding-left: 25px;
+}
+
+.sec3 {
+    padding-left: 20px;
+}
+
+.sec5 {
+    margin-left: 13px;
+    color: rgb(16, 17, 16);
+    font-weight: 750 !important; /* Preserve font weight */
+}
+.srch{
+    margin-top: -10px;
+}
+
+.navbaar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px !important; /* Ensure height remains fixed */
+    display: grid;
+    align-content: center;
+    grid-template-columns: 9% 9% 9% 30% 9% 9% 9% 12%;
+    margin: 0; /* Remove margin for consistency */
+    padding: 3px;
+    background-color: white; /* Ensure it doesn't overlap other sections */
+    z-index: 1000; /* Ensure it's above all other elements */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+.dropdown-content,
+.services-dropdown-content {
+    position: absolute; /* Ensure dropdowns display correctly */
+    z-index: 1001; /* Place dropdowns above the navbar */
+}
+.oo{
+    padding-top: 45px;
+}
+.ooo{
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+/* Dropdown container */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+  }
+  
+  /* Dropdown button */
+  .dropdown-button {
+    background-color: white; /* Neutral background */
+    color: inherit; /* Matches existing font color */
+    padding: 10px 15px;
+    font-size: inherit; /* Matches existing font size */
+    font-weight: inherit; /* Matches existing font weight */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Dropdown arrow */
+  .dropdown-arrow {
+    padding-top: 16px;
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
+  
+  /* Dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+  }
+  .productnavbar{
+    text-decoration: none !important;
+    color: #0bcd66 !important;
+    font-weight: 780;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-top:-7.2px ;
+    border: none;
+  }
+  /* Links in dropdown */
+  .dropdown-content a {
+    text-decoration: none ;
+    color: #7a7a7a ;
+    font-weight: 750;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown-container:hover .dropdown-content {
+    display:block;
+    width: max-content;
+  }
+  .dropdown-content:hover{
+    border: whitesmoke;
+  }
+  .forhovf:hover,.forhovth:hover,.forhovo:hover,.forhovt:hover,.forhovfi:hover,.forhovs:hover{
+    background-color: #403e3e;
+    color: #ffffff;
+  }
+
+/* Services Dropdown container */
+.services-dropdown-container {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+}
+
+/* Services Dropdown button */
+.services-dropdown-button {
+    background-color: white; /* Neutral background */
+    color: inherit; /* Matches existing font color */
+    padding: 10px 15px;
+    font-size: inherit; /* Matches existing font size */
+    font-weight: inherit; /* Matches existing font weight */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Dropdown arrow */
+.services-dropdown-arrow {
+    padding-top: 16px;
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+/* Services Dropdown content */
+.services-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+
+/* Services navbar link styling */
+.services-navbar {
+    text-decoration: none !important;
+    color: #0bcd66 ;
+    font-weight: 780;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-top: -7px;
+    border: none;
+}
+
+/* Links in services dropdown */
+.services-dropdown-content a {
+    text-decoration: none ;
+    color: #7a7a7a ;
+    font-weight: 750;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Show dropdown on hover */
+.services-dropdown-container:hover .services-dropdown-content {
+    display: block;
+    width: max-content;
+}
+.sforhovfr:hover,.sforhovo:hover,.sforhovt:hover,.sforhovth:hover{
+    background-color: #403e3e;
+    color: #ffffff;
+}
+/* Style for each .tt */
+.tt {
+    position: relative;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Active state style */
+.tt.active {
+    background-color: green; /* Green background */
+    color: white; /* White text for better visibility */
+    box-shadow: 0px 4px 10px rgba(0, 128, 0, 0.5); /* Slight shadow for emphasis */
+}
+/* Make sure the default section is visible on page load */
+.prodscon {
+    display: flex; /* Show products section by default */
+}
+.prodscon {
+    display: flex; /* Ensure the Products section is displayed by default */
+}
+.servicon, .cliencon {
+    display: none; /* Ensure other sections are hidden */
+}
+.srchpng {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 10px;
+    font-weight: 100;
+    background-color: rgb(250, 249, 249);
+    background-image: url('./images/search2.png');
+    background-size: 23px;
+    background-position: 5px 3px;
+    background-repeat: no-repeat;
+    padding: 3px 25px 15px 35px;
+}
+
+.videeo {
+    position: relative;
+    height: 500px; /* Adjust as needed */
+    width: 100%; /* Use full width */
+    overflow: hidden; /* Prevent any overflow */
+    margin-top: -62px;
+}
+
+.videeo .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale video to cover the area */
+    z-index: -1; /* Keeps the video behind other content */
+    background-color: black; /* Fallback background color */
+    opacity: 95%;
+}
+
+.offer {
+    background-color: rgba(215, 226, 213, 0.5); /* Adjust transparency for video background */
+    height: 150px;
+    margin-top: -110px;
+    border-radius: 25% 25% 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Centered text vertically */
+    padding: 3px; /* Added some padding */
+    z-index: 10; /* Ensures it appears above other elements */
+    text-align: center; /* Centered text */
+    margin-bottom: 15px;
+}
+
+.textoff {
+    padding-top: 15px;
+    font-size: 30px; 
+    letter-spacing: 2px;
+    font-weight: normal; /* Default font weight */
+    color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+}
+
+/* Adjust the overall spacing and layout */
+.okay {
+    display: flex;
+    justify-content: space-around; 
+    color: rgb(77, 155, 111);
+    font-size: 18px;
+    gap: 180px;
+    margin-top: -100px;
+    font-weight: 550;
+    height: 80px;
+    z-index: -1;
+}
+.servi:hover, .prods:hover, .clien:hover{
+    background-color: #196b37;
+    color: white;
+    transform: translateY(-10px);
+}
+
+.servi, .prods, .clien {
+    margin-top: -5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30%;
+    letter-spacing: 1.2px;
+    z-index: 10;
+    transition: all ease 0.3s;
+}
+
+.servi {
+    height: 50px;
+    width: 150px;
+    margin: -20px;
+    padding: 25px;
+    padding-left: 2.75%;
+}
+
+.prods {
+    height: 50px;
+    width: 230px;
+    margin: -28px;
+    padding: 23px;
+    padding-left: 5.3%;
+    font-size: larger;
+}
+.tt{
+    margin: -10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.clien {
+    height: 50px;
+    width: 150px;
+    margin: -30px;
+    padding: 19.2px;
+    padding-left: 3.55%;
+    font-size: larger;
+}
+
+.ok {
+    background-color:rgb(255, 255, 255);
+    margin-top: -63px;
+    z-index: 1;
+    height: 300px;
+    width: 100%;
+}
+.prodhead{
+    height: 60px;
+    font-size: 39px;
+    padding-left:67.5%;
+    margin-bottom: 30px;
+    background-color: rgb(64, 177, 130);
+    opacity: 55%;   
+    font-weight: 900; 
+}
+.uptwo {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.containeer {
+    margin: 10px;
+    height: 250px;
+    width:100%;
+}
+.ih{
+    max-width: 600px; /* Adjust the maximum width of the card */
+    height: 300px;   
+}
+.maya{
+    position: relative;
+    top:-260px;
+    right:-750px;
+    
+
+}
+.custom-card {
+    max-width: 600px; /* Adjust the maximum width of the card */
+    height: 240px; /* Set a custom height */
+    margin-bottom: 20px; /* Add space between cards */
+}
+
+/* Customize the image size within the card */
+.custom-card .col-md-4 img {
+    height: 100%; /* Image takes up full height of the card */
+    object-fit: cover; /* Ensure image covers the space without distorting */
+}
+
+/* Customize card title */
+.custom-card .card-title {
+    font-size: 1.5rem; /* Increase title font size */
+    color: #333; /* Change title color */
+}
+
+/* Customize card text */
+.custom-card .card-text {
+    font-size: 1rem; /* Set font size for the card content */
+    color: #555; /* Change text color */
+}
+
+/* Customize the last updated text */
+.custom-card .text-body-secondary {
+    color: #999; /* Change the color of the secondary text */
+}
+
+.lowfour {
+    height: 670px; /* Retain original height */
+    width: 62%; /* Original width */
+    margin-left: 18.2%; /* Center alignment */
+    gap: 5px;
+}
+
+.custom-card-lowfour {
+    width: 100%; /* Maintain full width for cards */
+    height: 300px; /* Original height for consistency */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+
+
+.card-img-top-lowfour {
+    width: 100%; /* Ensure images scale properly */
+    height: 140px; /* Maintain original image height */
+    object-fit: cover; /* Prevent image distortion */
+}
+
+.card-body-lowfour {
+    padding: 1rem; /* Add consistent spacing */
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.card-title-lowfour {
+    font-size: 1.5rem; /* Original font size */
+    color: #333;
+}
+
+.card-text-lowfour {
+    font-size: 1rem; /* Original text size */
+    color: #555;
+}
+
+  .servicesname {
+    font-size: 39px;
+    height:60px;
+    width:100%;
+    padding-left: 30px;
+    background-color: rgb(64, 177, 130);
+    opacity: 55%;   
+    font-weight: 900; 
+    margin-bottom: 30px;
+  }
+ 
+  .servlist {
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Increased gap for better spacing */
+    width: 90%;
+  }
+  
+  .service-card {
+    width: 24%; /* Responsive, consistent width */
+    background-color: #ffffff; /* Subtle background */
+    border: 1px solid #ddd; /* Clean, light border */
+    border-radius: 12px; /* Softer corners for a modern feel */
+    text-decoration: none;
+    color: #000; /* Consistent black for text */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Elegant hover shadow */
+  }
+  
+  .card-imagee {
+    width: 100%;
+    height: 180px; /* Consistent height */
+    object-fit: cover;
+    border-radius: 10px; /* Softer corners */
+    margin-bottom: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #111; /* Darker black for title */
+    font-family: 'Poppins', sans-serif; /* High-quality font for title */
+  }
+  
+  .service-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #444; /* Professional grey for list text */
+  }
+  
+  .service-list li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555; /* Balanced grey */
+    font-family: 'Roboto', sans-serif; /* Consistent modern font */
+  }
+  
+.contactpage{
+    font-size: 39px;
+    height:60px;
+    width:100%;
+    margin-top: 30px;
+    padding-left: 30px;
+    background-color: rgb(64, 177, 130);
+    opacity: 55%;   
+    font-weight: 900; 
+}
+.container-contact {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.contact-form-unique .form-group-contact,
+.contact-form-unique .form-group-message {
+    margin-bottom: 20px;
+}
+
+.contact-form-unique label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-form-unique input, 
+.contact-form-unique textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.submit-btn-unique {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.submit-btn-unique:hover {
+    background-color: #0056b3;
+}
+.bgmm{
+    position: absolute;
+    opacity: 70%;
+    z-index: -1;
+    height: 700px;
+    width:100%;
+}
+.contact{
+    position: relative;
+    padding-top: 50px;
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+.abtimg{
+    height:200px;
+    width:400px;
+    opacity: 80%;
+    margin-left: 13.2%;
+}
+.aboutus{
+    width:100%;
+ margin-left: -70px;
+}
+.leaad{
+    font-weight: 800;
+    font-size: 45px
+}
+.led{
+    font-weight: 600;
+}
+.blog-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .blog-item {
+    display: flex;
+    flex-direction: column;
+    width: 30%; /* Adjust as needed */
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .blog-info {
+    padding: 15px;
+  }
+  
+  .blog-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .blog-summary {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .read-more {
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: bold;
+  }
+.blogname{
+    font-size: 39px;
+    height:60px;
+    width:100%;
+    margin-top: 30px;
+    padding-left: 1200px;
+    background-color: rgb(64, 177, 130);
+    opacity: 55%;   
+    font-weight: 900; 
+    margin-bottom: 30px;
+}
+
+.conani:hover{
+    box-shadow: #185a91;
+    border: #046828 solid 5px;
+    transform:skewY(50px);
+}
+.conani{
+    transition: all ease-in-out 0.5s;
+}
+.brigg:hover{
+    transform: translateY(-10px);
+    background-color: rgb(24, 75, 53);
+    color: whitesmoke;
+    opacity: 80%;
+    align-self: center;
+    justify-self: center;
+    letter-spacing: 1px;
+}
+.brigg{
+    transition: all 0.5s;
+    animation: slideinFront ease-in-out 1s;
+}
+.ti:hover{
+    font-weight: 780;
+}
+.hn{
+   margin-top: 10px;
+   width: 100%;
+}
+.ti{
+    transition: all ease 0.2s;
+}
+.naya{
+    margin-left: 120px;
+}
+.leftanim {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.leftanim.visible {
+    animation: slideinLeft ease 1s forwards;
+}
+@keyframes slideinLeft {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Right Animation */
+.rightanim {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.rightanim.visible {
+    animation: slideinRight ease 1s forwards;
+}
+
+@keyframes slideinRight {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Forward Animation */
+.forwardanim {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.forwardanim.visible {
+    opacity:0.55;
+    animation: slideinForward ease 1s forwards;
+}
+
+@keyframes slideinForward {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes etxt {
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes etxtn {
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes etxtne {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes etxtnex {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    20% {
+        transform: translateY(0px);
+        opacity: 0.5;
+    }
+    40% {
+        transform: translateY(60px);
+    }
+    60% {
+        transform: translateY(0px);
+    }
+    80% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.etxt{
+    transition: etxt ease 1s;
+    opacity:0;
+}
+.etxt.visible{
+    animation: etxt ease 1s;
+    opacity: 1;
+}
+.etxtn{
+    transition: etxtn ease 1s;
+    opacity:0;
+}
+.etxtn.visible{
+    animation: etxtn ease 1s;
+    opacity: 1;
+}
+.etxtne{
+    transition: etxtne ease 1s;
+    opacity:0;
+}
+.etxtne.visible{
+    animation: etxtne ease 1s;
+    opacity: 1;
+}
+/* Main Section Styles */
+.choicee {
+    padding: 10px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.okay {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 130px;
+    margin-bottom: 40px;
+}
+
+.servi, .prods, .clien {
+    cursor: pointer;
+    padding: 15px;
+    background-color: #f4f4f4;
+    opacity: 1;
+    border-radius: 18px;
+}
+/* Carousel Section Styles */
+.section {
+    display: none; /* Hide all sections initially */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 0px;
+}
+
+.section .one, .section .two, .section .three, .section .four {
+    width: 220px;
+    height: 220px;
+    background-color: whitesmoke;
+    border: #c6c6c6 groove 1px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.section .one:hover, .section .two:hover, .section .three:hover, .section .four:hover {
+    font-weight: bolder;
+    background-color: #c1c1c1;
+    transform: scale(1.1);
+}
+
+.section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.section p {
+    text-align: center;
+    font-size: 19px;
+    margin-top: 6px;
+}
+
+/* Make the services section visible by default */
+.servicon {
+    display: flex;
+}
+.ownstyser{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.proddcar,.clinealln{
+    height: 300px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.po,.pt,.pth,.pfr,.pfi,.ps,.pse,.pe{
+    background-color: #ffffff;
+    padding-top: -10px;
+    height: 220px;
+    width: 220px;
+}
+.prodscon .p0,.prodscon .pt,.prodscon .pth,.prodscon .pfr{
+    width: 220px;
+    height: 220px;
+    background-color: rgb(255, 254, 254);
+    border: #c6c6c6 groove 1px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.prodscon .po:hover,.prodscon .pt:hover,.prodscon .pth:hover,.prodscon .pfr:hover{
+    font-weight: bolder;
+    background-color: #c1c1c1;
+    transform: scale(1.1);   
+}
+.cliencon>.one,.cliencon>.two,.cliencon>.three,.cliencon>.four{
+    width: 220px;
+    height: 220px;
+    background-color: whitesmoke;
+    border: #c6c6c6 groove 1px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+/* Ensure the default section is products */
+.section {
+    display: none; /* All sections hidden by default */
+}
+
+.prodscon {
+    display: flex; /* Show products section by default */
+    flex-wrap: wrap; /* Optional: Adjust for layout */
+    justify-content: center; /* Center align items */
+}
+
+.servicon, .cliencon {
+    display: none; /* Services and Clients hidden by default */
+}
+
+/* Styling for the active navigation button */
+.nav-button.active {
+    background-color: #007BFF; /* Example: Highlight active button */
+    color: white;
+}

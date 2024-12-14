@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 100%;
+}
+
+/* Section Styles */
+.equipment-section {
+    margin-bottom: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 15;
+    min-height:max-content;
+    width: 100%;;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-intro {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Card Styles */
+.equipment-card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-icon {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+.card-list li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.cta-link {
+    color: #0056b3;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #0056b3;
+}
+
+.cta-link:hover {
+    color: #003f7d;
+    border-color: #003f7d;
+}

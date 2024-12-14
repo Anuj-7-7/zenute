@@ -1,0 +1,98 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-info {
+    width: 55%;
+}
+
+.about-info h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+.about-info p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+footer .site-map {
+    margin-bottom: 10px;
+}
+
+footer .site-map ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .site-map ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+footer .site-map ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .contact-info p {
+    font-size: 1rem;
+}
+
+footer .contact-info a {
+    color: #ff9800;
+}
